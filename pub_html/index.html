@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<script>
+function Validar(){
+var nome = formulario.nome.value;
+var email = formulario.email.value;
+var senha = formulario.senha.value;
+
+if(nome ==""){
+alert('Preencha o campo nome!')
+	formulario.nome.focus();
+	return false;
+
+}
+if(email=="" || email.indexOf("@")==-1 ){
+alert('Preencha o campo e-mail!');
+formulario.email.focus();
+return false;
+
+}
+
+if(senha=="" || senha.length <=5 ){
+alert('Preencha o campo senha com no mínimo 6 caracteres!');
+formulario.senha.focus();
+return false;
+}
+
+}
+</script>
+<head>
+<body>
+
+
+
+<form name="formulario" action="enviar.php" method="POST">
+	Nome: <input type="text"  name="nome" placeholder="digite seu nome" checked > <br><br>
+	E-mail: <input type="text"  name="email" placeholder="digite seu e-mail"> <br><br>
+	Senha: <input type="password"  name="senha" placeholder="digite sua senha"> <br><br>
+	<input type="submit" onclick="return Validar()">
+</form>
+
+
+
+
+
+</body>
+
+
+</html>
