@@ -1,2 +1,2 @@
 # primeiro-projeto
-Validação de campos.
+Validação de campos com JavaScript.
