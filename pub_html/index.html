@@ -2,6 +2,17 @@
 <html>
 <head>
 <meta charset = "UTF-8">
+<style>
+#estilo {
+background-color:red;
+width:180px;
+font-family:tahoma;
+font-size:20px;
+color:gray;
+
+}
+
+</style>
 <script>
 function Validar(){
 var nome = formulario.nome.value;
@@ -34,7 +45,7 @@ return false;
 
 
 
-<form name="formulario" action="enviar.php" method="POST">
+<form name="formulario" action="enviar.php" method="POST" id="estilo">
 	Nome: <input type="text"  name="nome" placeholder="digite seu nome" checked > <br><br>
 	E-mail: <input type="text"  name="email" placeholder="digite seu e-mail"> <br><br>
 	Senha: <input type="password"  name="senha" placeholder="digite sua senha"> <br><br>
